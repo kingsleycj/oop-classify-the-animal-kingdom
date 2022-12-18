@@ -17,39 +17,59 @@ class Animal {
   getPhylum() {
     this.#phylum;
   }
+
+  warmBlooded() {
+    this.warmBlooded = true; 
+  }
+
+  coldBlooded() { 
+    this.coldBlooded = true;
+  }
 }
 
 
-class WithBackbone {
-    temperatureCondition(){
-    warmBlooded = true;
-    }
-}
+// class WithBackbone {
+//     temperatureCondition(){
+//     warmBlooded = true;
+//     }
+// }
 
-class WithoutBackbone {
-    temperatureCondition(){
-    coldBlooded = true;
-    }
-}
+// class WithoutBackbone {
+//     temperatureCondition(){
+//     coldBlooded = true;
+//     }
+// }
 
 class AVES extends Animal {
-    
+    constructor(animalName, phylum){
+        super(animalName, phylum);
+        this.warmBlooded()
+    }
 }
 
 class Mammal extends Animal {
-
+    constructor(animalName, phylum) {
+        super(animalName, phylum);
+        this.warmBlooded();
+    }
 }
 
 class Arthropoda extends Animal {
-
+  constructor(animalName, phylum) {
+    super(animalName, phylum);
+    this.coldBlooded();
+  }
 }
 
 class Fish extends Animal {
-
+  constructor(animalName, phylum) {
+    super(animalName, phylum);
+    this.coldBlooded();
+  }
 }
 
 class Amphibia extends Animal {
-
+    
 }
 
 class Reptiles extends Animal {
