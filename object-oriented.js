@@ -10,7 +10,16 @@ class Animal {
     this.#animalName = animalName;
     this.#phylum = phylum;
   }
+
+  getAnimalName() {
+    this.#animalName;
+  }
+  getPhylum() {
+    this.#phylum;
+  }
 }
+
+
 class WithBackbone {
     temperatureCondition(){
     warmBlooded = true;
