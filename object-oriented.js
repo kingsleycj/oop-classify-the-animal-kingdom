@@ -69,11 +69,17 @@ class Fish extends Animal {
 }
 
 class Amphibia extends Animal {
-    
+  constructor(animalName, phylum) {
+    super(animalName, phylum);
+    this.coldBlooded();
+  }
 }
 
 class Reptiles extends Animal {
-
+  constructor(animalName, phylum) {
+    super(animalName, phylum);
+    this.coldBlooded();
+  }
 }
 const bird = new AVES();
 const cat = new Mammal();
