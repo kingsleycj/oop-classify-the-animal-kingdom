@@ -28,14 +28,22 @@ class Animal {
   }
 
   // a method created to store temperature Status of the animal
-  warmBlooded() {
-    this.warmBlooded = true;
+  // also an encapuslated temperature status
+  #warmBlooded() {
+    return this.warmBlooded = true;
   }
 
-  coldBlooded() {
-    this.coldBlooded = true;
+  #coldBlooded() {
+    return this.coldBlooded = true;
   }
 
+  // a method to call the encapuslated temperature status
+  warm(){
+    this.#warmBlooded()
+  }
+  cold(){
+    this.#coldBlooded()
+  }
   /* --------------------------------------------------------------------------------------------------
   An abstract method  will  list the properties of the animal and will throw an ERROR if  
   implementation is attempted  on a class that does not inherit from the ABSTRACT CLASS
@@ -62,7 +70,7 @@ class Aves extends Animal {
         this.animalName;
         this.classification;
         this.withBackbone();
-        this.warmBlooded();
+        this.warm();
     }
     // an implementation of an abstract method in a subclass
     listProperties() {
@@ -77,7 +85,7 @@ class Mammal extends Animal {
     this.getAnimalName();
     this.getClassification();
     this.withBackbone();
-    this.warmBlooded();
+    this.warm();
   }
   // an implementation of an abstract method in a subclass
   listProperties() {
@@ -92,7 +100,7 @@ class Arthropoda extends Animal {
     this.getAnimalName();
     this.getClassification();
     this.withoutBackbone();
-    this.coldBlooded();
+    this.cold();
   }
   // an implementation of an abstract method in a subclass
   listProperties() {
@@ -107,7 +115,7 @@ class Fish extends Animal {
     this.getAnimalName();
     this.getClassification();
     this.withBackbone();
-    this.coldBlooded();
+    this.cold();
   }
   // an implementation of an abstract method in a subclass
   listProperties() {
@@ -122,7 +130,7 @@ class Amphibia extends Animal {
     this.getAnimalName();
     this.getClassification();
     this.withBackbone();
-    this.coldBlooded();
+    this.cold();
   }
   // an implementation of an abstract method in a subclass
   listProperties() {
@@ -137,7 +145,7 @@ class Reptiles extends Animal {
     this.getAnimalName();
     this.getClassification();
     this.withBackbone();
-    this.coldBlooded();
+    this.cold();
   }
   // an implementation of an abstract method in a subclass
   listProperties() {
