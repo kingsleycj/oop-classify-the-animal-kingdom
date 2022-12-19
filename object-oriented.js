@@ -24,8 +24,8 @@ class Animal {
     this.classification;
   }
   /* -------------------------------------------------------------------
-a method created to store temperature Status of the animal
-and  also an encapuslated temperature status
+    a method created to store temperature Status of the animal
+    and  also an encapuslated temperature status
 ---------------------------------------------------------------------*/
   #warmBlooded() {
     return (this.warmBlooded = true);
