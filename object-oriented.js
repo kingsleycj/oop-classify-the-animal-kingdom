@@ -37,8 +37,8 @@ class Animal {
   }
 
   /* --------------------------------------------------------------------------------------------------
-  This method  will  list the properties of the animal and will throw an ERROR if  implementation is
-    attempted  on a class that does not inherit from the ABSTRACT CLASS
+  An abstract method  will  list the properties of the animal and will throw an ERROR if  
+  implementation is attempted  on a class that does not inherit from the ABSTRACT CLASS
 -----------------------------------------------------------------------------------------------------*/
   listProperties() {
     throw new Error("This method cannot be implemented");
@@ -55,7 +55,7 @@ class Animal {
 }
 
 
-// a class that inherits from Animal
+// The Aves class that inherits from Animal
 class Aves extends Animal {
     constructor(animalName, classification) {
         super(animalName, classification);
@@ -64,85 +64,85 @@ class Aves extends Animal {
         this.withBackbone();
         this.warmBlooded();
     }
-
+    // an implementation of an abstract method in a subclass
     listProperties() {
         console.log(this);
     }
 }
 
-// a class that inherits from Animal
+// The Mammal class that inherits from Animal
 class Mammal extends Animal {
-    constructor(animalName, classification) {
-        super(animalName, classification);
-        this.getAnimalName();
-        this.getClassification();
-        this.withBackbone();
-        this.warmBlooded();
-    }
-
-    listProperties() {
-        console.log(this);
-    }
+  constructor(animalName, classification) {
+    super(animalName, classification);
+    this.getAnimalName();
+    this.getClassification();
+    this.withBackbone();
+    this.warmBlooded();
+  }
+  // an implementation of an abstract method in a subclass
+  listProperties() {
+    console.log(this);
+  }
 }
 
 // The Arthropoda class that inherits from Animal
 class Arthropoda extends Animal {
-    constructor(animalName, classification) {
-        super(animalName, classification);
-        this.getAnimalName();
-        this.getClassification();
-        this.withoutBackbone();
-        this.coldBlooded();
-    }
-
-    listProperties() {
-        console.log(this);
-    }
+  constructor(animalName, classification) {
+    super(animalName, classification);
+    this.getAnimalName();
+    this.getClassification();
+    this.withoutBackbone();
+    this.coldBlooded();
+  }
+  // an implementation of an abstract method in a subclass
+  listProperties() {
+    console.log(this);
+  }
 }
 
 // The Fish class that inherits from Animal
 class Fish extends Animal {
-    constructor(animalName, classification) {
-        super(animalName, classification);
-        this.getAnimalName();
-        this.getClassification();
-        this.withBackbone();
-        this.coldBlooded();
-    }
-
-    listProperties() {
-        console.log(this);
-    }
+  constructor(animalName, classification) {
+    super(animalName, classification);
+    this.getAnimalName();
+    this.getClassification();
+    this.withBackbone();
+    this.coldBlooded();
+  }
+  // an implementation of an abstract method in a subclass
+  listProperties() {
+    console.log(this);
+  }
 }
 
 // The Amphibia class that inherits from Animal
 class Amphibia extends Animal {
-    constructor(animalName, classification) {
-        super(animalName, classification);
-        this.getAnimalName();
-        this.getClassification();
-        this.withBackbone();
-        this.coldBlooded();
-    }
-
-    listProperties() {
-        console.log(this);
-    }
+  constructor(animalName, classification) {
+    super(animalName, classification);
+    this.getAnimalName();
+    this.getClassification();
+    this.withBackbone();
+    this.coldBlooded();
+  }
+  // an implementation of an abstract method in a subclass
+  listProperties() {
+    console.log(this);
+  }
 }
 
 // The Reptles class that inherits from Animal
 class Reptiles extends Animal {
-    constructor(animalName, classification) {
-        super(animalName, classification);
-        this.getAnimalName();
-        this.getClassification();
-        this.withBackbone();
-        this.coldBlooded();
-    }
-
-    listProperties() {
-        console.log(this);
-    }
+  constructor(animalName, classification) {
+    super(animalName, classification);
+    this.getAnimalName();
+    this.getClassification();
+    this.withBackbone();
+    this.coldBlooded();
+  }
+  // an implementation of an abstract method in a subclass
+  listProperties() {
+    console.log(this);
+  }
 }
 
 /* ----------------------------------------------------------------
@@ -163,8 +163,12 @@ fish.setAnimalName("Tilapia");
 amphibia.setAnimalName("Toad");
 reptiles.setAnimalName("Turtle");
 
+
 console.log("\nCLASSIFICATION OF THE ANIMAL KINGDOM\n");
 
+/* ------------------------------------------------------------------------
+Logging out subclasses  and methods inherited from its parent class
+--------------------------------------------------------------------------*/
 
 console.log(aves.getAnimalName());
 aves.listProperties();
