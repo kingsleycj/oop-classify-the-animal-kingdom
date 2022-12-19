@@ -23,6 +23,7 @@ Object-oriented programming is a programming paradigm based on the concept of "o
 
 **Method 1:** 
 - run the replit link and see the result : [Replit Link](https://replit.com/@kingsleycj/OOP-classification-of-animal-kingdom#index.js)
+
 **Method 2:**
 - Clone the repo `oop-classify-the-animal-kingdom`.
 - To run the solution, make sure you have [nodejs](https://nodejs.org/) installed.
