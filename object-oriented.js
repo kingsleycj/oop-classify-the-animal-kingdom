@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------------
-An Abstract class where all other classes will be referenced from
+    An Abstract class where all other classes will be referenced from
 ---------------------------------------------------------------------*/
 class Animal {
   // constructor function that will accept the animalName and classification as parameters
@@ -173,7 +173,7 @@ reptiles.setAnimalName("Turtle");
 console.log("\nCLASSIFICATION OF THE ANIMAL KINGDOM\n");
 
 /* ------------------------------------------------------------------------
-    Logging out subclasses  and methods inherited from its parent class
+    Logging out subclasses and methods inherited from the ABSTRACT class
 --------------------------------------------------------------------------*/
 
 console.log(aves.getAnimalName());
