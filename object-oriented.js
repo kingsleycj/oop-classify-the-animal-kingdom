@@ -55,7 +55,7 @@ class Animal {
 }
 
 
-// The Aves class that inherits from Animal
+// The Aves class that inherits from Animal (Base class)
 class Aves extends Animal {
     constructor(animalName, classification) {
         super(animalName, classification);
@@ -70,7 +70,7 @@ class Aves extends Animal {
     }
 }
 
-// The Mammal class that inherits from Animal
+// The Mammal class that inherits from Animal (Base class)
 class Mammal extends Animal {
   constructor(animalName, classification) {
     super(animalName, classification);
@@ -85,7 +85,7 @@ class Mammal extends Animal {
   }
 }
 
-// The Arthropoda class that inherits from Animal
+// The Arthropoda class that inherits from Animal (Base class)
 class Arthropoda extends Animal {
   constructor(animalName, classification) {
     super(animalName, classification);
@@ -100,7 +100,7 @@ class Arthropoda extends Animal {
   }
 }
 
-// The Fish class that inherits from Animal
+// The Fish class that inherits from Animal (Base class)
 class Fish extends Animal {
   constructor(animalName, classification) {
     super(animalName, classification);
@@ -115,7 +115,7 @@ class Fish extends Animal {
   }
 }
 
-// The Amphibia class that inherits from Animal
+// The Amphibia class that inherits from Animal (Base class)
 class Amphibia extends Animal {
   constructor(animalName, classification) {
     super(animalName, classification);
@@ -130,7 +130,7 @@ class Amphibia extends Animal {
   }
 }
 
-// The Reptles class that inherits from Animal
+// The Reptiles class that inherits from Animal (Base class)
 class Reptiles extends Animal {
   constructor(animalName, classification) {
     super(animalName, classification);
@@ -167,7 +167,7 @@ reptiles.setAnimalName("Turtle");
 console.log("\nCLASSIFICATION OF THE ANIMAL KINGDOM\n");
 
 /* ------------------------------------------------------------------------
-Logging out subclasses  and methods inherited from its parent class
+    Logging out subclasses  and methods inherited from its parent class
 --------------------------------------------------------------------------*/
 
 console.log(aves.getAnimalName());
