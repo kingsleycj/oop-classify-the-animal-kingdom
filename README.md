@@ -20,7 +20,7 @@ Object-oriented programming is a programming paradigm based on the concept of "o
 - This is a way of hiding information from being accessible by some classes. Its a way of making private methods.
 
 
-### How to Use
+### Running Procedure:
 
 **Method 1:** 
 - run the replit link and see the result : [Replit Link](https://replit.com/@kingsleycj/OOP-classification-of-animal-kingdom#index.js)
@@ -34,7 +34,7 @@ node object-oriented.js
 ```
 - You can explore the code however suits you
 
-# Output
+# Sample Output
 ```
 --> oop-classify-animal-kingdom> node object-oriented.js
 CLASSIFICATION OF THE ANIMAL KINGDOM
