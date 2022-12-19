@@ -2,9 +2,6 @@
 An Abstract class where all other classes will be referenced from
 ---------------------------------------------------------------------*/
 class Animal {
-  animalName;
-  classification;
-
   // constructor function that will accept the animalName and classification as parameters
   constructor(animalName, classification) {
     if (this.constructor === Animal) {
