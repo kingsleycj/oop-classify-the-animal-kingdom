@@ -26,23 +26,24 @@ class Animal {
   getClassification() {
     this.classification;
   }
-
-  // a method created to store temperature Status of the animal
-  // also an encapuslated temperature status
+  /* -------------------------------------------------------------------
+a method created to store temperature Status of the animal
+and  also an encapuslated temperature status
+---------------------------------------------------------------------*/
   #warmBlooded() {
-    return this.warmBlooded = true;
+    return (this.warmBlooded = true);
   }
 
   #coldBlooded() {
-    return this.coldBlooded = true;
+    return (this.coldBlooded = true);
   }
 
   // a method to call the encapuslated temperature status
-  warm(){
-    this.#warmBlooded()
+  warm() {
+    this.#warmBlooded();
   }
-  cold(){
-    this.#coldBlooded()
+  cold() {
+    this.#coldBlooded();
   }
   /* --------------------------------------------------------------------------------------------------
   An abstract method  will  list the properties of the animal and will throw an ERROR if  
