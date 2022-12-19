@@ -37,7 +37,8 @@ class Animal {
   }
 
   /* --------------------------------------------------------------------------------------------------
-  This method  will  list the properties of the animal and will throw an ERROR if  implementation is attempted  on a class that does not inherit from the ABSTRACT CLASS
+  This method  will  list the properties of the animal and will throw an ERROR if  implementation is
+    attempted  on a class that does not inherit from the ABSTRACT CLASS
 -----------------------------------------------------------------------------------------------------*/
   listProperties() {
     throw new Error("This method cannot be implemented");
